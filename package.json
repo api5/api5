@@ -1,0 +1,36 @@
+{
+  "name": "api5",
+  "version": "0.0.1",
+  "description": "Define your API with Typescript",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint src/**"
+  },
+  "files": ["lib/**/*"],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/api5/api5.git"
+  },
+  "author": "dzung.org",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/api5/api5/issues"
+  },
+  "homepage": "https://github.com/api5/api5#readme",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.23.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
+  }
+}
