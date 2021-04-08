@@ -1,4 +1,5 @@
-import { Operation, HttpMethod, HttpStatusCode, ObjectSchema, Request, Response, ValueType } from "../operation";
+import { Operation, HttpMethod, HttpStatusCode, ObjectSchema, Request, Response, ValueType } from "../operation.ts";
+import { assertEquals } from "https://deno.land/std@0.92.0/testing/asserts.ts";
 
 const bookSchema: ObjectSchema = {
   name: ValueType.STRING,
@@ -17,7 +18,9 @@ const resType: Response = {
 
 export const createBook = new Operation(reqType, resType)
 
-
-test('compile', () => {
-  expect(1).toBe(1)
+Deno.test({
+  name: "compile",
+  fn(): void {
+    assertEquals(1, 1)
+  }
 })

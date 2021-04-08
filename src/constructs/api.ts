@@ -1,4 +1,4 @@
-import { Operation } from "./operation";
+import { Operation } from "./operation.ts";
 
 
 export enum Api5SpecsVersion {
